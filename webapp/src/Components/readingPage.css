@@ -1,0 +1,102 @@
+/* readingPage.css */
+
+/* Center the entire reading page, max width 1024px. */
+.reading-page {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Hero image with max-height 360px */
+  .hero-image {
+    display: block;
+    max-width: 100%;
+    max-height: 360px;
+    width: auto;
+    height: auto;
+    margin: 0 auto 1rem;
+  }
+  
+  /* Story text */
+  .story-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Word status highlighting */
+  .word.correct {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .word.incorrect {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* The row for all buttons: Prev on far left, Next on far right, center in the middle */
+  .button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  /* The container for the mic & reset in the center */
+  .center-buttons {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+  }
+  
+  /* Discrete style for Prev/Next */
+  .discrete {
+    font-size: 0.9rem;
+    color: #444;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+  }
+  
+  /* 
+    Shared style for circular icon-only buttons:
+    - 50x50 size
+    - center icon
+    - no border text
+  */
+  .circle-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #fff; /* icon color white */
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Mic button: green or a bright primary color */
+  .mic-button {
+    background-color: #4caf50; 
+  }
+  
+  /* Reset button: a secondary color (orange) */
+  .reset-button {
+    background-color: #ff9800;
+  }
+  
+  /* Debug textarea */
+  .debug-textarea {
+    width: 100%;
+    height: 60px;
+    resize: none;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
